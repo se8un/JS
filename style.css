@@ -1,37 +1,40 @@
+body {
+  background-image: url(img/desert.jpg);
+}
+
 .game {
-  width: 800px;
-  height: 200px;
-  border-bottom: 1px solid #000;
+  width: 80%;
+  height: 360px;
+  /* border-bottom: 1px solid #000; */
   margin: auto;
 }
 
 #player {
-  width: 50px;
-  height: 50px;
+  width: 120px;
+  height: 120px;
   background-image: url(img/Timon.png);
-  background-size: 50px 50px;
+  background-size: 120px 120px;
   position: relative;
-  top: 150px;
+  top: 240px;
 }
 
 #block {
-  width: 20px;
-  height: 40px;
-  background-image: url(img/palm_tree_PNG2484-122x170.png);
-  background-size: 20px 40px;
+  width: 120px;
+  height: 120px;
+  background-image: url(img/horse.png);
+  background-size: 120px 120px;
   position: relative;
-  top: 110px;
-  left: 580px;
-  /* animation: blockMove 10s infinite linear; */
-  animation: blockMove 2s linear;
+  top: 140px;
+  left: 100%;
+  /* animation: blockMove 2s infinite linear; */
 }
 
 @keyframes blockMove {
   0% {
-    left: 580px;
+    left: 100%;
   }
   100% {
-    left: -20px;
+    left: -20%;
   }
 }
 
@@ -41,18 +44,18 @@
 
 @keyframes jump {
   0% {
-    top: 100px;
+    top: 240px;
   }
-  /* 30% {
-    top: 70px;
-  } */
+  30% {
+    top: 50px;
+  }
   50% {
-    top: 10px;
+    top: 0px;
   }
-  /* 80% {
-    top: 70px;
-  } */
+  70% {
+    top: 50px;
+  }
   100% {
-    top: 100px;
+    top: 240px;
   }
 }

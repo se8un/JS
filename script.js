@@ -1,5 +1,6 @@
 const player = document.getElementById('player')
 const block = document.getElementById('block')
+let counter = document.getElementById('counter')
 
 document.addEventListener('keydown', event => {
   jump()
@@ -22,8 +23,18 @@ let isAlive = setInterval(() => {
     window.getComputedStyle(block).getPropertyValue('left')
   )
 
-  if (blockLeft < 50 && blockLeft > 0 && playerTop >= 140) {
+  if (blockLeft < 120 && blockLeft > 0 && playerTop >= 240) {
     console.log('GAME OVER! :(')
-    // alert('GAME OVER! :(')
+    // alert(`GAME OVER! :( \nСчет: ${counter}`)
   }
 }, 10)
+
+// TODO:
+
+/* реализовать звук прыжка игрока
+function soundJump (){
+	if (keydown) {
+		звук
+	}
+}
+ */
