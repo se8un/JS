@@ -27,3 +27,5 @@ let isAlive = setInterval(() => {
     // alert('GAME OVER! :(')
   }
 }, 10)
+
+//
